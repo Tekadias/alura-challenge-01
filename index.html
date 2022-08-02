@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <title>Alura Challenge 01</title>
+  </head>
+  <body>
+    <header id="header">
+      <img src="imagens/High quality products 1 1.png" alt="Logo de Alura" />
+    </header>
+    <section id="main-section">
+      <div id="input-section">
+        <textarea
+          id="input"
+          placeholder="Digite seu Texto Aqui"
+          rows="10 "
+          cols="50"
+        ></textarea>
+        <div id="actions">
+          <div>
+            <p>
+              <span id="icon"><i class="fas fa-exclamation-circle"></i></span>
+              Acentos ou caracteres especiais não são aceitos
+            </p>
+            <div id="action-buttons">
+              <button id="encrypt" class="action-button">Encriptar</button>
+              <button id="copy" class="action-button">Copiar</button>
+              <button id="decrypt" class="action-button">Desencriptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="message">
+        <img src="imagens/boneco.png" />
+        <h1>Nenhuma Mensagem Foi encontrada</h1>
+        <p id="show-message">Apenas Letras Minuscúlas</p>
+      </div>
+    </section>
+    <footer id="footer">
+      Feito com <i class="fas fa-heart"></i> por 
+      <a href="https://github.com/Tekadias">
+      <img src="imagens/gitHub.png"
+       width="20px"> Teka Dias
+      </a>
+      
+      
+      
+    </footer>
+    <!-- WARNING MODAL -->
+    <div id="warningModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <i class="fas fa-exclamation-triangle"></i>
+          <h2>Advertência!</h2>
+        </div>
+        <div class="modal-body">
+          <p id="modal-message">Some text in the Modal Body</p>
+        </div>
+        <div class="modal-footer">
+          <button id="close-modal-button">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUCCESS MODAL -->
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <i class="fas fa-check-circle"></i>
+          <h2>¡Advertencia!</h2>
+        </div>
+        <div class="modal-body">
+          <p id="success-modal-message">Some text in the Modal Body</p>
+        </div>
+        <div class="modal-footer">
+          <button id="close-button">Fechar</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
